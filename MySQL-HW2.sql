@@ -24,5 +24,7 @@ mysql -u root -p sample < example.sql -- Заливаю в sample
 SHOW DATABASES;
 DESCRIBE sample.users;
 
--- 4. (по желанию) Ознакомьтесь более подробно с документацией утилиты mysqldump. Создайте дамп единственной таблицы help_keyword базы данных mysql. Причем добейтесь того, чтобы дамп содержал только первые 100 строк таблицы.
+/* 4. (по желанию) Ознакомьтесь более подробно с документацией утилиты mysqldump. 
+Создайте дамп единственной таблицы help_keyword базы данных mysql. 
+Причем добейтесь того, чтобы дамп содержал только первые 100 строк таблицы.*/
 mysqldump mysql -u root -p help_keyword --where='TRUE LIMIT 100' > help_keyword.sql
